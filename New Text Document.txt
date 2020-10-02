@@ -1,0 +1,7 @@
+import pandas as pd
+df1=pd.DataFrame({"fruits":("apple","banana","mango"),"animals" :("dog","lion","leopard"),"bird" :("eagle","sparrow","raven")},
+index=[101,102,103])
+df2=pd.DataFrame({"ddd":("apple","grapes","guava"),"colors":("red","blue","black"),"trees":("mango tree","banyan tree","eucalyptus")},
+index=[104,105,106])
+joined=df1.join(df2)
+print(joined)
